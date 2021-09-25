@@ -1,0 +1,38 @@
+1.docker images
+查看下载过的镜像
+2.docker ps
+查看正在运行的镜像
+3.docker run -p 项目端口号:对外端口号 Dockerfile
+创建一个容器
+4.docker start CONTAINER ID
+启动这个容器
+5.docker stop CONTAINER ID
+停止这个容器
+6.docker rm CONTAINER ID
+删除这个容器
+7.docker pull 软件名:版本号
+下载一个镜像
+8.docker rmi IMAGE ID
+删除一个软件的镜像
+9.docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7
+创建一个mysql容器
+10.docker exec -it mysql /bin/bash
+进入到mysql的容器当中
+11.docker cp 本地路径 容器ID:容器内路径
+将本地文件传入docker当中
+12.apt-get update
+容器内apt工具升级
+13.apt-get install zip
+容器内下载一些工具
+14.docker stats
+查看容器资源消耗情况
+15.docker logs 容器
+查看容器执行过程当中的日志
+16.docker build -t 镜像名:版本号 ./Dockerfile的路径
+根据Dockerfile创建相应的镜像
+17.docker login
+登陆到相应的镜像仓库当中
+18.docker tag [镜像ID] tag名
+为镜像打上tag，方便之后进行上传
+19.docker push tag
+将镜像传到镜像仓库当中

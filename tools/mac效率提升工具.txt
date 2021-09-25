@@ -1,0 +1,49 @@
+1.item2
+https://iterm2.com/
+[Mac下终端iTerm2配置 - 简书](https://www.jianshu.com/p/bb630ada1f02)
+注意：下载与当前Mac版本相应的iterm2，在downloads中的show older versions中
+
+2.on my zsh
+[Oh My Zsh - a delightful & open source framework for Zsh](https://ohmyz.sh/)
+问题1:
+新Mac电脑会遇到failed to connect to raw.githubusercontent.com 问题
+原因：dns混乱（？）
+解决：https://blog.csdn.net/qq_43531694/article/details/106862753中的第一种
+大概流程：
+1.前往etc文件夹，打开iterm
+2.在iterm中编辑hosts文件，sudo vi hosts
+3.编辑内容如blog中方法一所示
+完成后可以下载oh my zsh，但先需要初始化xcode，比较慢
+
+3.homebrew
+https://brew.sh/
+该处也可能会遇到on my zsh中的问题
+建议更换镜像源，否则非常慢
+最好根据以下链接下载
+参考：https://zhuanlan.zhihu.com/p/90508170
+问题1:
+太慢了，我是homebre-core下载到一半ctrl c，更换了镜像源
+然后homebre-cask又用回了原本的命令
+问题2:
+更换镜像源后，由于多次下载，会出现冲突，要删除再重新下载
+https://www.cnblogs.com/lfri/p/14310513.html
+
+4.alfred
+[如何破解Alfred3 - 简书](https://www.jianshu.com/p/97a11f119240)
+实用功能：历史剪切板
+workflow去github下载一些提升效率的workflow，比如：时间戳转换，decode，进制转换等
+
+5.[快速跳转目录](https://github.com/wting/autojump/wiki)
+` z floder`
+Brew install autojump，之后vim ～/.zshrc 修改当中的plugins项，加入autojump就可以了
+
+6.zsh-autosuggestions
+[可以根据历史提交记录, 进行输入提示](https://github.com/zsh-users/zsh-autosuggestions)
+
+7.zsh-syntax-highlighting
+[命令行的语法高亮](https://github.com/zsh-users/zsh-syntax-highlighting)
+```
+brew install zsh-syntax-highlighting
+source  /usr/local/Cellar/zsh-syntax-highlighting/0.6.0/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+```
+

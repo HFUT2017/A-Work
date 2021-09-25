@@ -1,0 +1,68 @@
+1.tail -f filename
+动态查看日志
+2.tail -100 filename
+从后开始查看100行日志
+3.head -100 filename
+从前开始查看100行日志
+4.pwd
+查看当前路径
+5.mv 源文件 目的路径
+将源文件移动到目的路径中
+6.ll
+查看文件夹内文件的信息
+7.stat filename
+查看单个文件的详细信息
+8.touch filename
+创建一个文件
+9.ps
+查看启动进程
+10.ps | grep command
+根据启动命令来获取进程信息
+11.ps | grep command |awk '{print $1}'
+根据启动命令来获取进程PID
+12.killall command
+根据进程名杀死进程
+12.kill -9 command
+杀死进程，但不一定会释放资源
+13.echo string > filename.txt
+向文件中写入消息(如果需要写入"a"的话需要\"a\"转义字符"
+14.nohup command &
+将command转到后台执行
+15.du -sh filename
+查看文件大小
+16.cp source dest
+将源文件复制到目标所在地，源文件不会消失，通常用来备份
+17.chmod
+修改文件权限
+18.wc
+统计文件的行数、单词数,字数
+19.find 
+查找文件或目录
+20.which
+查看一个命令的路径
+21.wget
+根据链接下载文件
+22.df
+查看当前硬盘的分区信息
+23.shutdown
+关机
+24.halt
+相当于shutdown -h,安全关机
+25.reboot
+重新启动系统
+26.su root
+在终端切换成root用户
+27.useradd
+创建新用户
+28.userdel
+删除用户
+29.ifconfig
+查看网络信息
+30.ping
+查看网络是否联通
+31.netstat
+查看端口
+32.cat filename
+查看某个文件的内容
+33.top
+实时显示系统中各进程资源占用

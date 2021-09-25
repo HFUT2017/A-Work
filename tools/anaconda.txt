@@ -1,0 +1,21 @@
+Anaconda常用命令
+1.创建虚拟环境
+conda create -n environment_name python=3.7.1
+2.激活虚拟环境
+linux/Mac:
+source activate environment_name
+Windows:
+activate
+ environment_name
+3.退出虚拟环境
+linux/Mac：source deactivate
+windows：deactivate
+4.删除虚拟环境
+conda
+ remove -n environment_name —all
+5.列出所有虚拟环境及路径
+conda
+ info —envs
+6.jupyter中切换虚拟环境
+
+python -m ipykernel install --user --name py27 --display-name "Python (py27)"

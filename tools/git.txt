@@ -1,0 +1,59 @@
+Git的使用
+
+1.git branch 分支名
+新建分支
+
+2.git checkout 分支名
+切换分支
+
+3.git pull
+拉取远程分支
+
+4.git push origin 分支名
+将分支合并到远端
+
+5.git add —all
+将所有变化加入到缓存区
+
+6.git commit -m “名字”
+提交到版本库
+
+7.git branch -a
+查看全部分支
+
+8.git branch -D 分支名
+删除本地分支
+
+9.git push origin —delete 分支名
+删除远程分支
+
+10.git diff
+查看与上一版本不同
+
+11.本地覆盖记录
+git commit --amend -m "Add an author/email comment"
+
+12.线上覆盖提交
+
+git push origin 分支名称：分支名称 -f
+
+13.无痛转移commit
+
+(1).提交了多个commit的分支A回退 git reset c945001bc6a554979db31f8697ccfa726cac14f4
+
+(2).分支A再次提交 git add all ;git commit重新提交一次，得到序列号xxxxx
+
+(3).切换分支，新建主分支的branch B；切换到新建分支B
+
+git checkout -b test111 origin/master
+
+(4).git cherry-pick xxxxx
+
+5.删除原有分支A
+
+14.git checkout .
+
+放弃所有修改
+
+15.git checkout -b 本地分支名 origin/远程分支名
+根据远程分支创建本地分支
